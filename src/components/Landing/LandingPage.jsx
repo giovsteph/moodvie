@@ -69,7 +69,6 @@ const Landing = () => {
 			});
 		} else {
 			randomSelected().then( (response) => {
-				console.log(response);
 				setSliderData(response);
 			}).catch((error) => {
 				console.error(error);
@@ -84,7 +83,7 @@ const Landing = () => {
         (<div className= {styles.Container}>
             <Header />
             <MoodTest selectedAnswerOne= {selectedAnswerOne}/>
-			<h3> Randome sugestion </h3>
+			<h3> Random suggestion </h3>
 			{sliderData ? <Slider data={sliderData} width='125px' height='225px' /> : null}
         </div> )
         : null}
