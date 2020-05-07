@@ -4,7 +4,6 @@ const BASE_API = 'https://yts.mx/api/v2/list_movies.json';
 
 async function genreSelected(userSelection){
   
-  
     //  * 1. Fetch all the data list
 
 async function getData(url){
